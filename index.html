@@ -13,7 +13,6 @@ Select ONE Additional
 [ no ] Feature 5 - Use .append() method
 -->
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,21 +27,29 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 class="mems">Memory #1</h3>
+        <p id="p1">More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 class="mems">Memory #2</h3>
+        <p id="p2">More about this memory.</p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 class="mems">Memory #3</h3>
+        <p id="p3">More about this memory</p>
       </li>
     </ol>
 
+    <h4>˚.⋆☾⋆⁺₊✧</h4>
+    <h5>Pics</h5>
+    <h6>
+      ˚.⋆☾⋆⁺₊✧
+    </h6>
+    <img />
+    <img id="two" />
+    <img id="three" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
@@ -56,6 +63,24 @@ Select ONE Additional
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
       });
+      $(".mems").css("color", "rgb(90, 101, 200)");
+      $("#p1").text("Went to Aruba!");
+      $("#p2").text("Went to Cape Cod with friends!");
+      $("#p3").text("Got a new cat!");
+      $("li").css("color", "rgb(135, 173, 218)");
+      $("img").attr(
+        "src",
+        "https://media.istockphoto.com/id/1062708314/photo/aruba-island-caribbean-sea.jpg?s=612x612&w=0&k=20&c=WjgMe3Zo-slQ1kgKUZEZxaJZreK9oZRGbnle-wTOc8A="
+      );
+      $("h1").css("color", "rgb(90, 101, 200)");
+      $("#two").attr(
+        "src",
+        "https://sixtyandme.com/wp-content/uploads/2024/08/Sixty-and-Me_Cape-Cod-%E2%80%93-Seafood-Sand-and-More-Seafood.jpg"
+      );
+      $("#three").attr(
+        "src",
+        "https://media-hosting.imagekit.io/d77eeaf6f7cb42a5/Screenshot%202025-04-22%20at%2012.20.13%E2%80%AFPM.png?Expires=1839946828&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OnfXH8F46EWW1Zw6rc9-9L~5UOTQuAxFAoUzuxML93Qq5EMHUxgGQEqSe6v8UoACIXBQUzLFINlUexZqWnWvAsRpP5f4jyI~-ZIRrMWrr5SuGkBrhgo8sXQUWv154To2dQ1LWPlNDXFNZ-VJqidBzPJuJHDc57B4Oifl8vKb8IKiGdSEhIJaCmWuxVXDEPvJFf9sKXI5ibauzGbjizD~W17S8UXy6KLSmzKL2XuGaWKomshJ5sRycqwYHSjZj3RS554aeogNcUMr0v6tcMIbyS3IR0z3~hRx9UQb8twKAZ1JrZrwohtYAJKYS70crrRwy9C1UsBDfWBVNkt7lDLrgQ__"
+      );
     </script>
   </body>
 </html>

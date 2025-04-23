@@ -9,6 +9,22 @@ img{
   border-radius: 30px;
 }
 
-h1 {
-  font-family: "Poetsen One", sans-serif;
+h1 {font: italic 20px fantasy;
 }
+
+h3{font: italic 20px fantasy;
+}
+
+li{font: italic 20px fantasy;}
+
+h4{font: italic 70px fantasy;
+color: rgb(90, 101, 200);
+}
+
+h5{font: italic 70px fantasy;
+color: rgb(90, 101, 200);}
+
+h6{font: italic 70px fantasy;
+color: rgb(90, 101, 200);}
+
+
